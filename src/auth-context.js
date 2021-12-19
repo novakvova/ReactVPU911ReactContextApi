@@ -5,6 +5,7 @@ export const initState = {
     user: null
   };
   
-  export const AuthContext = React.createContext(
-    initState
-  );
+  export const AuthContext = React.createContext({
+    ...initState,
+    login: (user)=>{}
+  });
